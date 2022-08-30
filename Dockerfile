@@ -6,6 +6,7 @@ WORKDIR /telegram-bot
 
 COPY main.py /telegram-bot
 
+RUN mv /telegram-bot/Lib/* /telegram-bot/
 RUN ls /telegram-bot
 
 RUN apt-get update
